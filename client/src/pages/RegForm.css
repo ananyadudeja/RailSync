@@ -1,0 +1,127 @@
+/* RegForm.css */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.registration-form-body {
+  background: url('/images/reg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180vh;
+  margin: 0;
+}
+
+.registration-form {
+  padding: 40px;
+  border-radius: 10px;
+  width: 180%;
+  max-width: 800px;
+  box-shadow: 0 0 20px white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.registration-form h1 {
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: blaack;
+  font-weight: 900;
+}
+
+.registration-form .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.registration-form label {
+  font-size: 18px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: black;
+  flex: 0 0 3%;
+  text-align: right;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  flex: 1;
+  font-size: 18px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="date"],
+.registration-form input[type="time"],
+.registration-form select {
+  font-size: 14px;
+  padding: 8px 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background: rgba(83, 110, 247, 0.7);
+  /* color: #fff; */
+  outline: none;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.registration-form input::placeholder {
+  color: none;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 2px;
+
+}
+
+.registration-form select {
+  background: rgba(83, 110, 247, 0.7);
+  color: #fff;
+}
+
+.registration-form button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+  background-color: #218838;
+}
+
+.registration-form p {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  color: #28a745;
+}
+
+@media (max-width: 480px) {
+  .registration-form {
+      padding: 15px;
+      max-width: 300px;
+  }
+}

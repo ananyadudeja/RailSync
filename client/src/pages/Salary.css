@@ -1,0 +1,202 @@
+/* Container and Form Styles */
+.container {
+    max-width: 100%; /* Reduced width to fit content */
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.table-form {
+    margin-top: 10px;
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Form Background and Shadow */
+form {
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+/* Headings */
+.main-heading {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 auto; /* Ensure the block element is centered */
+    display: block; /* Block-level element to respect text-align */
+    width: 100%; /* Ensure it takes full width */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Ensures table fits within the container */
+    border-collapse: collapse;
+    margin: 0;
+    display: block;
+    table-layout: auto;
+
+}
+
+th, td {
+    width: auto;
+    min-width: 40px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    font-size: 12px; 
+    min-width: 60px;
+}
+
+/* Set specific width for columns */
+th:nth-child(1), td:nth-child(1) {
+    width: 4%; /* Adjusted width for UAN column */
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 4%; /* Adjusted width for ECR column */
+}
+th:nth-child(3), td:nth-child(3) {
+    width: 4%; /* Adjusted width for UAN Repository column */
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 4%; /* Adjusted width for Gross column */
+}
+th:nth-child(5), td:nth-child(5) {
+    width: 4%; /* Adjusted width for EPF column */
+}
+th:nth-child(6), td:nth-child(6) {
+    width: 4%; /* Adjusted width for EPS column */
+}
+th:nth-child(7), td:nth-child(7) {
+    width: 4%; /* Adjusted width for EDLI column */
+}
+th:nth-child(8), td:nth-child(8) {
+    width: 4%; /* Adjusted width for EE column */
+}
+th:nth-child(9), td:nth-child(9) {
+    width: 4%; /* New column for EPS ER */
+}
+th:nth-child(10), td:nth-child(10) {
+    width: 4%; /* New column for NCP Days */
+}
+th:nth-child(11), td:nth-child(11) {
+    width: 4%; /* New column for Refunds */
+}
+
+
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Input Styles */
+input[type="text"] {
+    width: 100%; /* Adjusted to fit within cells */
+    padding: 4px;
+    margin:2px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 12px; /* Reduced font size */
+}
+
+/* Button Styles */
+button.btn {
+    width: auto;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+button.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-add {
+    background-color: #2196F3;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        border: 1px solid #ddd;
+        padding: 6px;
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    h {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f4f4f4;
+        padding: 5px;
+        border: 1px solid #ddd;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%; /* Ensure there’s space for label */
+        text-align: left;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding: 5px;
+        font-weight: bold;
+        background: #f4f4f4;
+    }
+
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button.btn {
+        width: 100%;
+    }
+}

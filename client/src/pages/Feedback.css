@@ -1,0 +1,133 @@
+/* Add the background image to the form container */
+body{
+    margin: 0;
+    padding: 0;
+    background: url('/images/reg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Ensures body covers full viewport height */
+}
+.feedback-container {
+    background: url('/images/reg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px; /* Adjust padding to ensure content is not too close to edges */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better contrast */
+    max-width: 800px;
+    margin: auto;
+    min-height: 100vh;
+}
+
+/* Form styling */
+.feedback-form {
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better contrast */
+    width: 100%;
+    max-width: 800px; /* Limit form width */
+    display: flex;
+    flex-direction: column; /* Arrange form elements vertically */
+
+}
+
+/* Header styling */
+.feedback-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Grouping form elements */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+/* Style for labels to ensure they are not too bold and aligned properly */
+.form-group label {
+    display: block;
+    font-weight: 500; /* Adjust font weight */
+    margin-right: 10px;
+    text-align: center; /* Align text to the right */
+}
+/* Style for rating numbers */
+.rating-numbers {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for rating numbers to be inline */
+.rating-numbers span {
+    margin: 0 12px; /* Space between numbers */
+    
+}
+
+/* Style for radio buttons */
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    /*justify-content:center;
+    gap: 15px; Space between radio buttons*/
+}
+
+
+/* Style for radio buttons */
+.radio-group label {
+    margin-right: 15px; /* Space between radio buttons */
+    color: white; /* Ensure labels are visible against darker background */
+    font-weight: bold;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Style for input fields to take up the remaining space */
+.form-group input,
+.form-group select {
+    flex: 3; /* Allow input fields to take up the remaining space */
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Label styling */
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500; /* Make labels bold */
+}
+
+/* Input and select styling */
+.feedback-form input[type="text"], 
+.feedback-form select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+}
+
+/* Radio button styling */
+.feedback-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button styling */
+.feedback-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #45a049;
+}

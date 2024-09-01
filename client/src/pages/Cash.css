@@ -1,0 +1,211 @@
+/* Container and Form Styles */
+.cash-inflow-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cash-inflow-form {
+    margin-top: 10px;
+    background: url('/images/reg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Form Background and Shadow */
+.cash-inflow-form form {
+    background: url('/images/reg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+/* Headings */
+.cash-inflow-main-heading {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+/* Table Styles */
+.cash-inflow-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    display: block;
+    table-layout: auto;
+}
+
+.cash-inflow-table th, 
+.cash-inflow-table td {
+    width: auto;
+    min-width: 40px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    min-width: 60px;
+}
+
+/* Set specific width for columns */
+.cash-inflow-table th:nth-child(1),
+.cash-inflow-table td:nth-child(1) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(2),
+.cash-inflow-table td:nth-child(2) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(3),
+.cash-inflow-table td:nth-child(3) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(4),
+.cash-inflow-table td:nth-child(4) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(5),
+.cash-inflow-table td:nth-child(5) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(6),
+.cash-inflow-table td:nth-child(6) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(7),
+.cash-inflow-table td:nth-child(7) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(8),
+.cash-inflow-table td:nth-child(8) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(9),
+.cash-inflow-table td:nth-child(9) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(10),
+.cash-inflow-table td:nth-child(10) {
+    width: 4%;
+}
+.cash-inflow-table th:nth-child(11),
+.cash-inflow-table td:nth-child(11) {
+    width: 4%;
+}
+
+.cash-inflow-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.cash-inflow-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cash-inflow-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Input Styles */
+.cash-inflow-input {
+    width: 100%;
+    padding: 4px;
+    margin: 2px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+/* Button Styles */
+.cash-inflow-button.btn {
+    width: auto;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+.cash-inflow-button.btn:hover {
+    background-color: #45a049;
+}
+
+.cash-inflow-button.btn-add {
+    background-color: #2196F3;
+}
+
+.cash-inflow-button.btn-submit {
+    background-color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cash-inflow-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        border: 1px solid #ddd;
+        padding: 6px;
+    }
+
+    .cash-inflow-table th, 
+    .cash-inflow-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cash-inflow-table th {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f4f4f4;
+        padding: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .cash-inflow-table td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+    .cash-inflow-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding: 5px;
+        font-weight: bold;
+        background: #f4f4f4;
+    }
+
+    .cash-inflow-input {
+        width: 100%;
+    }
+
+    .cash-inflow-button.btn {
+        width: 100%;
+    }
+}

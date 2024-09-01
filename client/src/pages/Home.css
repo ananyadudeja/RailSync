@@ -1,0 +1,53 @@
+.home-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    margin-bottom: 60px;
+  }
+  
+  
+  .service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  
+  .service h2 {
+    font-size: 6rem;  /* Increase the font size of the section headings */
+    margin-bottom: 20px;
+  }
+  
+  .service p {
+    font-size: 2.3rem;  /* Increase the font size of the section paragraphs */
+  }
+  
+  .service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .service-left,
+  .service-right {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .service-right {
+    order: 2;
+  }
+  
+  .service-left {
+    order: 4;
+  }
+  
+  .service:nth-child(even) .service-right {
+    order: 1;
+  }
+  
+  .service:nth-child(even) .service-left {
+    order: 2;
+  }

@@ -1,0 +1,63 @@
+/* Add the background image to the form container */
+form {
+    background: url('/images/.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px; /* Adjust padding to ensure content is not too close to edges */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better contrast */
+}
+
+/* Keep existing styles intact */
+.header, .body, .footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.header div, .body table, .footer table {
+    margin: 10px;
+}
+
+.header label {
+    display: block;
+    margin: 5px 0;
+}
+
+.body table, .footer table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.body th, .footer th, .body td, .footer td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+body tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+body tr:hover {
+    background-color: #ddd;
+}
+
+.header input, .body input, .footer input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
